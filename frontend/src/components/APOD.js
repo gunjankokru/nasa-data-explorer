@@ -12,7 +12,7 @@ const APOD = () => {
   const fetchData = (selectedDate = '') => {
     setLoading(true);
     setError('');
-    axios.get(`http://localhost:8080/api/apod${selectedDate ? `?date=${selectedDate}` : ''}`)
+    axios.get(`https://nasa-data-explorer-ifsi.onrender.com/api/apod${selectedDate ? `?date=${selectedDate}` : ''}`)
       .then((res) => {
         setData(res.data);
         setLoading(false);

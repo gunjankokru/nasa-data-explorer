@@ -1,3 +1,6 @@
+Here's the properly formatted README.md in raw markdown format, optimized for GitHub:
+
+```markdown
 # 🚀 NASA Data Explorer
 
 An interactive web application built with **React** and **Node.js** to explore publicly available data from NASA Open APIs.  
@@ -7,17 +10,18 @@ From **Astronomy Pictures of the Day** to **Mars Rover images**, this app brings
 
 ## 🖼 Live Application
 
-- **Frontend (Vercel):** [nasa-data-explorer](https://nasa-data-explorer-f6v9x44dt-gunjans-projects-a12f7e80.vercel.app)  
-- **Backend (Render):** [nasa-data-explorer-ifsi.onrender.com](https://nasa-data-explorer-ifsi.onrender.com)
+- **Frontend (Vercel):** [nasa-data-explorer.vercel.app](https://nasa-data-explorer-f6v9x44dt-gunjans-projects-a12f7e80.vercel.app)  
+- **Backend (Render):** [nasa-data-explorer.onrender.com](https://nasa-data-explorer-ifsi.onrender.com)
 
 ---
 
 ## 📁 Repository Structure
 
-```text
+```
 nasa-data-explorer/
 ├── backend/               # Node.js + Express API server
-│   └── index.js
+│   ├── index.js
+│   └── package.json
 ├── frontend/              # React application
 │   ├── public/
 │   │   └── screenshots/
@@ -30,6 +34,7 @@ nasa-data-explorer/
 │   └── package.json
 ├── .gitignore
 └── README.md
+```
 
 ---
 
@@ -57,27 +62,25 @@ nasa-data-explorer/
 ## 🧑‍💻 Getting Started
 
 ### 1️⃣ Clone the Repository
-
 ```bash
 git clone https://github.com/gunjankokru/nasa-data-explorer.git
 cd nasa-data-explorer
+```
 
 ### 2️⃣ Start the Backend
-
 ```bash
 cd backend
 npm install
 node index.js
-
+```
 Backend runs at: http://localhost:8080
 
 ### 3️⃣ Start the Frontend
-
 ```bash
 cd ../frontend
 npm install
 npm start
-
+```
 Frontend runs at: http://localhost:3000
 
 ---
@@ -85,32 +88,29 @@ Frontend runs at: http://localhost:3000
 ## 🌐 Deployment Notes
 
 ### 📦 Frontend on Vercel
-
-- Set project root to frontend
-
+- Set project root to `frontend`
 - React auto-detected by Vercel
-
 - No build config needed
 
-### ⚙️ Backend on Render or Railway
-
-- Deploy the backend/ folder as a Node.js app
-
-- Set environment variable:
-
+### ⚙️ Backend on Render/Railway
+1. Deploy the `backend/` folder as Node.js app  
+2. Set environment variable:
 ```env
-  NASA_API_KEY=your_actual_nasa_api_key_here
-
-  - Entry point: index.js
+NASA_API_KEY=your_actual_nasa_api_key_here
+```
+3. Entry point: `index.js`
 
 ---
 
- 🌌 Astronomy Picture of the Day (APOD)
- 
- Light Mode: frontend/public/screenshots/APOD_light.png
- Dark Mode: frontend/public/screenshots/APOD_dark.png
+## 🌌 Screenshots
 
- 🚗 Mars Rover Image Explorer
+### Astronomy Picture of the Day (APOD)
+| Light Mode | Dark Mode |
+|------------|-----------|
+| ![APOD Light](./frontend/public/screenshots/APOD_light.png) | ![APOD Dark](./frontend/public/screenshots/APOD_dark.png) |
 
- Light Mode: frontend/public/screenshots/MarsRover_light.png
- Dark Mode: frontend/public/screenshots/MarsRover_dark.png
+### 🚗 Mars Rover Image Explorer
+| Light Mode | Dark Mode |
+|------------|-----------|
+| ![Mars Rover Light](./frontend/public/screenshots/MarsRover_light.png) | ![Mars Rover Dark](./frontend/public/screenshots/MarsRover_dark.png) |
+```
